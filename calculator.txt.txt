@@ -1,0 +1,62 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Calculator {
+
+
+    public static void main(String[] args) {
+
+        // taking the two input statements from the user
+        
+        Scanner console = new Scanner(System.in);
+        float number_1 , number_2;
+        System.out.println("Enter your first number :");
+        number_1= console.nextFloat();
+        System.out.println("Enter your second number :");
+        number_2= console.nextFloat();
+        System.out.println("You have entered  "+number_1 +" and "+number_2 +" numbers :");
+        String prompt ="0 for addition , 1 for subtraction , 2 for multiplication  and 3 for division :";
+        System.out.println(prompt);
+
+        int input= console.nextInt();
+
+        switch (input){
+            case 0:
+                System.out.print("The addition of numbers are : ");
+                System.out.println(number_1+number_2);
+            case 1:
+                System.out.print("The subtraction of numbers are :");
+                System.out.println(number_1-number_2);
+            case 2:
+                System.out.print("The multiplication of numbers are ");
+                System.out.println(number_1*number_2);
+            case 3:
+                System.out.print("The division of two numbers are ");
+                System.out.println(number_1/number_2);
+
+        }
+        System.out.println("End of the result.......");
+
+         /*
+        int [][] matrix = {  {23,34,231,223,23} ,
+                { 23,23,1231,231}};
+        System.out.println(matrix[0][1]);
+        String [] laptops={"Lenovo", "Dell", "Microsoft ", "HP", "Toshaba"};
+        System.out.println(laptops[4]);
+        System.out.println("THe complete list of pc's Companies are :");
+        for (String  elements:laptops
+             ) {
+
+                System.out.println(elements);
+            System.out.println("That's end for now .. ");
+            
+          */
+
+
+
+        }
+
+
+    }
+}
